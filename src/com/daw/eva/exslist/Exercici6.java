@@ -30,6 +30,16 @@ public class Exercici6 {
 
         System.out.println("Agenda ordenada pel cognom1:");
         Collections.sort(agenda);
+        	
+//        Collections.sort(agenda, new Comparator<EntradaAgenda>() {
+//
+//			@Override
+//			public int compare(EntradaAgenda arg0, EntradaAgenda arg1) {
+//				// TODO Auto-generated method stub
+//				return 0;
+//			}
+//        	
+//        });
         EntradaAgenda.imprimirAgenda(agenda);
 
         System.out.println();

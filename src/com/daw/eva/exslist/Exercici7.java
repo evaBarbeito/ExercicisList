@@ -10,15 +10,17 @@ public class Exercici7 {
 		List<String> baralla =getBaralla();
 		//print(baralla);
 		Collections.shuffle(baralla);
+		
 		//System.out.println("La baralla barrejada és");
 		//print(baralla);
+		
 		repartirJugadors(baralla, 2,5);
-		System.out.println("La baralla restant és: ");
+		System.out.println("-------------La baralla restant és: ");
 		print(baralla);
 	}
 	
 	public static List<String> getBaralla(){
-		List<String> baralla = new ArrayList();
+		List<String> baralla = new ArrayList<String>();
 		String pal[]={"cor","piques","diamants","trevol"};
 		String valor[]={"As","2","3","4","5","6","7","8","9","10","J","Q","K"};
 		
@@ -32,13 +34,20 @@ public class Exercici7 {
 		
 		return baralla;
 	}
-	
+	/**
+	 * Reparteix les últimes n cartes de la baralla, dona una "ma" de n cartes, començant pel final
+	 * @param baralla
+	 * @param n
+	 * @return
+	 */
 	public static List<String> repartir(List<String> baralla, int n){
+		
 		List<String> subList = baralla.subList(baralla.size()-n,baralla.size());
-		 List<String> ma = new ArrayList<String>(subList);
+		List<String> ma = new ArrayList<String>(subList);
 		baralla.subList(baralla.size()-n,baralla.size()).clear();
 		
 		return ma;
+		//return subList;
 	}
 	
 	public static void repartirJugadors(List<String>baralla, int jugadors,int cartes){
@@ -49,7 +58,7 @@ public class Exercici7 {
 	            return;
 	     }
 		 for (int i = 0; i < jugadors; i++){
-			 System.out.println("cartes del jugador"+i);
+			 System.out.println("-------------Cartes del jugador "+i);
 	            print(repartir(baralla, cartes));
 	    }
 	     

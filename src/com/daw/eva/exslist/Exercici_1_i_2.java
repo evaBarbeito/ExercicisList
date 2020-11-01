@@ -23,6 +23,7 @@ public class Exercici_1_i_2 {
 
 		for (int i = 0; i < args.length; i++) {
 			numbers.add(Integer.parseInt(args[i]));
+			System.out.println(args[i]);
 		}
 		System.out.println("A la llista hi ha:"+numbers.size()+" numeros");
 
@@ -51,6 +52,8 @@ public class Exercici_1_i_2 {
 		 * contains) i en sortir del bucle neteja la segona llista, és a dir
 		 * elimina tots els elements i comprova que efectivament està buida.
 		 */
+		
+		System.out.println("------------------------");
 		List<Integer> numbers2 = new ArrayList<Integer>();
 		numbers2.add(new Integer(3));
 		numbers2.add(new Integer(4));
@@ -60,7 +63,7 @@ public class Exercici_1_i_2 {
 		}
 		
 		for (Integer element : numbers2) {
-			if (numbers.contains(element))System.out.println("l'element existeix");
+			if (numbers.contains(element))System.out.println("l'element de la segona existeix, a la primera llista, " + element);
 		}
 		numbers2.clear();
 		if (numbers2.isEmpty()){System.out.println("la llista està buida");}

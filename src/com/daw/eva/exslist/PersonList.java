@@ -10,7 +10,7 @@ public class PersonList {
 	 
 	public static void printListPerson(List<Person> persons){
 		for (Person person : persons){
-			System.out.println(person.getName());
+			System.out.println(person.getName() + ", " + person.getAge());
 		}
 	}
 	
