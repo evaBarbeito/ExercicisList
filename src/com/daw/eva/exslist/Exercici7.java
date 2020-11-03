@@ -34,6 +34,7 @@ public class Exercici7 {
 		
 		return baralla;
 	}
+	
 	/**
 	 * Reparteix les últimes n cartes de la baralla, dona una "ma" de n cartes, començant pel final
 	 * @param baralla

@@ -40,6 +40,7 @@ public class Exercici6 {
 //			}
 //        	
 //        });
+        
         EntradaAgenda.imprimirAgenda(agenda);
 
         System.out.println();

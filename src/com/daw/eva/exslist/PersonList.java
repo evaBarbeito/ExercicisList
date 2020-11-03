@@ -25,6 +25,8 @@ public class PersonList {
 		return menors;
 	}
 	
+	//aquesta llista d'entrada se suposa ordenada en ordre creixent
+	
 	public static List<Person> menorsEdat2(List<Person> persons) {
 		boolean esMenor = true;
 		List<Person> menors = new ArrayList<>();
